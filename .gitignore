@@ -1,0 +1,19 @@
+# Virtual environment
+venv/
+env/
+
+# Environment files
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.log
+*.egg-info/
+
+# Docker
+*.tar
+docker-compose.override.yml
