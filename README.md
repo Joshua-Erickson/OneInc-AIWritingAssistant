@@ -1,9 +1,32 @@
-Overview
+🧠 AI Writing Assistant
+  - A single-page web application that leverages Large Language Models (LLMs) to rephrase user input into different writing styles — professional, casual, polite, and social media. The project demonstrates full-stack    development, API integration, and clean UX design.
 
-This repository contains a SPA frontend and a FastAPI backend, which is fully containerized using Docker
-  - The frontend runs locally using Node.js and Vite.
-  - The backend runs inside a Linux-based Docker container and provides the API endpoints for the SPA.
-  - Environment variables (like API keys) are loaded from a local .env file for the backend only.
+🎯 Objective
+  - Build an interactive AI-powered writing assistant that:
+  - Accepts text input from the user.
+  - Rephrases it into multiple tones and styles using an LLM API (e.g., OpenAI, Claude).
+  - Presents each style clearly and responsively in a single-page UI.
+
+🧩 Tech Stack
+  - Frontend: React.js, TypeScript, Vite
+  - Backend: Python, Node.js
+  - Containerization: Docker
+  - LLM Integration: Hugging Face - DeepSeek v3-0324
+
+⚙️ Features
+✅ Core Functionality
+  - ✍️ User inputs text and clicks “Process”.
+  - 🔁 Backend sends the text to the LLM and receives rephrased responses.
+  - 💬 Frontend displays responses in four styles:
+    - Professional
+    - Casual
+    - Polite
+    - Social Media
+  - 🚫 While processing:
+    - Users cannot submit another request.
+    - A “Cancel” button allows stopping the process.
+  - ⚡ Streaming Output: See the LLM’s response appear in real-time (word-by-word or sentence-by-sentence).
+  - 🪶 Separated output panels
 
 Assumptions
   - You have Docker and Docker Compose installed.
